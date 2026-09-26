@@ -20,7 +20,7 @@ jobs:
       - name: Build and test
         run: ./gradlew build
 
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         with:
           name: custom-crosshair-studio
           path: build/libs/*.jar
