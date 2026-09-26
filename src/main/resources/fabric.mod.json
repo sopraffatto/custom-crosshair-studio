@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "customcrosshairstudio",
+  "version": "${version}",
+  "name": "Custom Crosshair Studio",
+  "description": "Customizable crosshair: Classic, Dot, Inverted and Drawn styles, a separate enemy crosshair, live preview and presets.",
+  "authors": [
+    "pqtaa"
+  ],
+  "contact": {
+    "homepage": "https://github.com/sopraffatto/custom-crosshair-studio",
+    "sources": "https://github.com/sopraffatto/custom-crosshair-studio",
+    "issues": "https://github.com/sopraffatto/custom-crosshair-studio/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/customcrosshairstudio/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.customcrosshairstudio.CrosshairStudioClient"
+    ],
+    "modmenu": [
+      "net.customcrosshairstudio.gui.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "customcrosshairstudio.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
